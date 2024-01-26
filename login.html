@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: url(images/loginbg.jpg);
+            background-size: cover;
+            backdrop-filter: blur(2px);
+            font-family: Arial, sans-serif;
+            background-color: #BCDAF5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-image: linear-gradient(to right top, #1a71f4, #005c94, #007f8e, #009e5e, #7eb20a);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 332px;
+            text-align: center;
+            height: 450px;
+            color: #fff;
+        }
+
+        h2 {
+            color: #000000;
+        }
+
+        .input-container {
+            margin: 20px 0;
+            position: relative;
+            color: #fff;
+        }
+
+        .input-container p {
+            text-align: left;
+            margin: 0px 0px 0px 35px;
+            font-weight: bold;
+        }
+
+        input {
+            background-color: #A6A6A6;
+            width: calc(100% - 58px);
+            box-sizing: border-box;
+        border: none;
+            border-radius: 10px;
+            margin-top: 5px;
+            padding: 14px 0px 13px 42px;
+            box-shadow: 1px 2px 3px #605c5c;
+
+        }
+
+        .input-text::placeholder {
+            color: #fff;
+            font-size: 1.15rem;
+        
+
+        }
+
+        .icon {
+            position: absolute;
+            top: 68%;
+            left: 43px;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 8px;
+            margin-top: -7px;
+            margin-right: 20px;
+        }
+
+        .forgot-password a {
+            color: #fff;
+
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #e67123;
+            color: #000000;
+            padding: 13px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 195px;
+            font-size: 1.15rem;
+            height: 42px;
+           
+
+        }
+
+        button:hover {
+            background-color: #0f3a5b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-container">
+                <p>USERNAME</p>
+                <i class="icon fas fa-user"></i>
+                <input type="text" class="input-text" placeholder=" Type your Username" required>
+            </div>
+            <div class="input-container">
+                <p>PASSWORD</p>
+                <i class="icon fas fa-lock"></i>
+                <input type="password" class="input-text" placeholder="Type your Password" required>
+            </div>
+
+            <div class="forgot-password">
+                <a href="forgot-password.html">Forgot your password?</a>
+
+            </div>
+           <a href="index.html"> <button  type="submit">LOGIN</button></a>
+        
+    </div>
+
+</body>
+
+</html>
